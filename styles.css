@@ -1,0 +1,625 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #444;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ff6347;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    color: #1c1c1c;
+    border-radius: 5px;
+}
+
+/* Sección de introducción */
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #2c2c2c;
+    margin-bottom: 40px;
+}
+
+.intro-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sección de contenido */
+.content-section {
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff6347;
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.content-box.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.content-text {
+    flex: 2;
+}
+
+.content-text h3 {
+    font-size: 1.8rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.content-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.link-button {
+    display: inline-block;
+    background-color: #868282;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #000000;
+}
+
+/* Enlace oculto pero visible */
+.hidden-link {
+    display: inline-block;
+    background-color: #555;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.hidden-link:hover {
+    background-color: #444;
+}
+
+/* Sección adicional */
+.additional-content {
+    padding: 40px 20px;
+    background-color: #2c2c2c;
+    margin-bottom: 40px;
+}
+
+.additional-content h2 {
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.additional-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #e0e0e0;
+    border-top: 1px solid #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos adicionales para la página de instrucciones */
+
+/* Sección de instrucciones */
+.instructions {
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.instructions h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de los pasos y la imagen principal */
+.step-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.main-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.steps-container {
+    flex: 1;
+}
+
+.steps-box {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Contenedor para los pasos inferiores */
+.bottom-steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.bottom-steps .step {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bottom-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.bottom-steps .steps-box {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Advertencia */
+.warning {
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #0f100d;
+    color: #ddd6d6;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.warning p {
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #e0e0e0;
+    border-top: 1px solid #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la página de la entidad */
+
+/* Sección de la entidad */
+.entity {
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+.entity-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.entity-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.entity-text {
+    max-width: 600px;
+    text-align: center;
+}
+
+.entity-text h2 {
+    font-size: 2rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.entity-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Información adicional sobre la entidad */
+.additional-info {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+
+.additional-info h3 {
+    font-size: 1.8rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.additional-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Enlace al compañero de la entidad */
+.companion-link {
+    color: #4169e1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.companion-link:hover {
+    color: #6495ed;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #e0e0e0;
+    border-top: 1px solid #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la página de la entidad maligna */
+
+/* Estilos generales */
+.horror-body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Encabezado */
+header {
+    background-color: #900;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* Sección principal */
+.horror-entity {
+    padding: 20px;
+    text-align: center;
+}
+
+.horror-title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.horror-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 3px #000;
+    margin-bottom: 30px;
+}
+
+/* Imágenes aterradoras */
+.horror-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.horror-image-left, .horror-image-right {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border: 5px solid #900;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Información adicional */
+.horror-additional {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+.companion-hint {
+    color: #ff6347;
+    font-size: 1.1rem;
+}
+
+.companion-link-horror {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.companion-link-horror:hover {
+    color: #ff6347;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #e0e0e0;
+    border-top: 1px solid #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales para todas las páginas */
+body {
+    background-color: #222; /* Color oscuro para el fondo */
+    color: #ddd;
+    font-family: 'Courier New', Courier, monospace; /* Nueva tipografía */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Advertencia tenebrosa en instrucciones */
+.warning {
+    text-align: center;
+    color: #ff0000; /* Letra roja para la advertencia */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    margin-top: 50px;
+}
+
+/* Enlaces */
+a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6347; /* Color cuando se pasa el cursor */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos solo para la página de companero_maligno.html */
+
+.horror-title {
+    color: #ff0000; /* Título en rojo */
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000; /* Sombra para darle un efecto más tenebroso */
+}
+
+/* Resto de los estilos de la página */
