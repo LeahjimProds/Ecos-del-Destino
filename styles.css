@@ -388,13 +388,14 @@ footer {
 
 /* Enlace al compañero de la entidad */
 .companion-link {
-    color: #4169e1;
+    color: #434444;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 .companion-link:hover {
-    color: #6495ed;
+    color: #ffeeee;
 }
 
 /* Pie de página */
@@ -693,17 +694,13 @@ footer {
 
 
 
-
-
-
-
 /*codigo para celulares................................................................................
 
 
 
 /* styles.css */
 
-/* Estilos generales */
+* Estilos generales *
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -807,7 +804,7 @@ footer {
     padding: 1rem;
 }
 
-/* Media Queries para dispositivos móviles */
+
 @media (max-width: 768px) {
     .intro {
         flex-direction: column;
